@@ -1,0 +1,42 @@
+/*padding: separacion de texto y la caja;
+padding: 5px; General
+padding: 5px 10px; Arriba abajo
+padding: 5px 10px 8px 5px; arriba der abajo izq*/
+
+body{
+	background: black;
+	border: 1px solid blue;
+	font-size: 16px;/*1EM*/
+	margin: 0px auto;
+	max-width: 1024px;
+	color:white;
+	
+	
+}
+
+header
+{
+	background: white;
+	margin: 0 auto;
+	display: inline;
+
+}
+header input{
+	float: right;
+	margin-right: 890px;
+	position: relative;
+}
+
+main article
+{
+	background: black;	
+}
+
+#cabezaimg{
+			
+	width: 750px;
+
+
+
+}
+
