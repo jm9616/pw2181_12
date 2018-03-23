@@ -1,0 +1,56 @@
+/*Imagen con atributo alt*/
+img[alt]{
+	border:5px solid blue;
+
+}
+
+/*Imagen con atributo SRC cadena exacta*/
+img[SRC="img/beb3619a85edc0c5e947d98a142257c6.jpeg"]{
+	width: 400px;
+}
+
+/*^ = circunflejo*/
+/*img[src^="img/"]{
+	width: 150px;
+}*/
+/*alfinal*/
+/*
+img[src$="png"]{
+	width: 250px;
+}*/
+img[SRC*="mg/"]{
+	width:1000px;
+
+}
+/*El caracter ~ indica que estos selectores estan separados por espacios*/
+article[class~="resaltado"]{
+	border:1px dashed blue;
+
+
+
+}
+article[class~="archivo"]{
+	border:1px dashed red;
+
+}
+
+article[class~="archivo"]{
+	border:1px dashed green;
+
+}
+/*El atributo class/id es una lista de valores separados por guiones */
+article[class|="ingles"]{
+	text-align: center;
+
+}
+
+
+/*selector de secundarios*/
+/*seleccionar solamente las p que se encuentran inmediatamente despues del div*/
+div > p{ /* Soolo hijos directos*/
+	color:blue; 
+}
+/*Todos los elementos p seran seleccionados*/
+div p{
+	color:red;
+}
