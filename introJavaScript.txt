@@ -1,0 +1,80 @@
+var a,b = 6;
+undefined
+b
+6
+a
+undefined
+a= 5
+5
+a
+5
+b
+6
+var c = a+b
+undefined
+c
+11
+alert('anuma');
+undefined
+var respuesta = prompt("dame un valor verga",0);
+undefined
+respuesta
+"150"
+function suma(a,b){return a + b;}
+undefined
+suma
+ƒ suma(a,b){return a + b;}
+suma(5+5);
+NaN
+var sumaNumero = function(a+b){return a + b;}
+VM911:1 Uncaught SyntaxError: Unexpected token +
+var sumaNumero = function(a,b){return a + b;}
+undefined
+sumaNumero 
+ƒ (a,b){return a + b;}
+suma(6+7);
+NaN
+sumaNumero(9,8);
+17
+document
+#document
+atomics
+VM1051:1 Uncaught ReferenceError: atomics is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1051:1
+document.write("chingue a su madre el amercia")
+undefined
+document.write("<article id ='demo'></article>;
+VM1190:1 Uncaught SyntaxError: Invalid or unexpected token
+document.write("<article id ='demo'></article">;
+VM1192:1 Uncaught SyntaxError: Unexpected token ;
+document.write("<article id ='demo'></article>";
+VM1194:1 Uncaught SyntaxError: missing ) after argument list
+document.write("<article id ='demo'></article>");
+undefined
+document.gete
+undefined
+document.getElementById('demo').inneHTML="MI ARTICLE";
+"MI ARTICLE"
+document.write("input type='text' id='txt'>"):
+VM1323:1 Uncaught SyntaxError: Unexpected token :
+document.write("input type='text' id='txt'>");
+undefined
+document.getElementById('txt').value=81;
+VM1365:1 Uncaught TypeError: Cannot set property 'value' of null
+    at <anonymous>:1:37
+(anonymous) @ VM1365:1
+document.write("input type='text' id='txt'>");
+undefined
+document.getElementById('txt').value=81;
+VM1369:1 Uncaught TypeError: Cannot set property 'value' of null
+    at <anonymous>:1:37
+(anonymous) @ VM1369:1
+document.write("<button onclick=alert('clic')>Da click</button>);
+VM1447:1 Uncaught SyntaxError: Invalid or unexpected token
+document.write("<button onclick=alert('clic')>Da click</button>");
+undefined
+document.write(<"input type='text' id='txt'>");
+VM1450:1 Uncaught SyntaxError: Unexpected token <
+document.write("<input type='text' id='txt'>");
+undefined
