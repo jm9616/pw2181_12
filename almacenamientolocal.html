@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>LocalStorage-sessionStorage</title>
+
+</head>
+<body>
+	<div id="demo">0</div>
+	<button onclick="aumentar();">Contador</button><br>
+	<button onclick="reiniciar();">Reiniciar</button> <br>
+	<button onclick="eliminar();">Eliminar</button>
+	<script>
+
+		var imprime = function(dato){
+			document.getElementById('demo').innerHTML=dato;
+		}
+
+		var aumentar = function(){
+			localStorage.cuenta++;
+			imprime(localStorage.cuenta);	
+
+		}
+		var reiniciar = function(){
+			localStorage.cuenta = 0;
+			imprime(localStorage.cuenta);	
+		}
+		var eliminar = function(){
+			localStorage.removeItem("cuenta")
+			imprime(localStorage.cuenta);	
+
+		}
+		//codigojavaScript
+		//Si existe el almacenamiento
+		//local en el navegador.
+		//
+		if (typeof(Storage)!= "undefined")
+		{
+			if (localStorage.cuenta)//si existe 
+			{
+				imprime(localStorage.cuenta);	
+			}else{
+			localStorage.cuenta = 0;
+			}
+		}
+	</script>
+</body>
+
+
+</html>
