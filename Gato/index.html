@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Juego Gato</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	
+	<p>
+		Tiempo jugador: <div id="tiempojugador"></div>
+	</p>
+	<p>
+		Tiempo partida: <div id="tiempopartida"></div>
+	</p>
+
+	<table id="tabla" border="1px">
+		<tr>
+			<td><button id="boton" onclick="iniciaPartida();iniciaJugador();"></button></td>
+			<td><button id="boton" onclick="iniciaPartida();iniciaJugador();"></button></td>
+			<td><button id="boton" onclick="iniciaPartida();iniciaJugador();"></button></td>
+		</tr>
+		<tr>
+			<td><button id="boton" onclick="iniciaPartida();iniciaJugador();"></button></td>
+			<td><button id="boton" onclick="iniciaPartida();iniciaJugador();"></button></td>
+			<td><button id="boton" onclick="iniciaPartida();iniciaJugador();"></button></td>
+		</tr>
+		<tr>
+			<td><button id="boton" onclick="iniciaPartida();iniciaJugador();"></button></td>
+			<td><button id="boton" onclick="iniciaPartida();iniciaJugador();"></button></td>
+			<td><button id="boton" onclick="iniciaPartida();iniciaJugador();"></button></td>
+		</tr>
+	</table>
+
+	<script>
+		var wpartida,wjugador;
+		var turno1,turno2;
+		function iniciaPartida(){
+			//Preguntar si soporta workers
+			if(typeof(Worker) != "undefined"){
+				if(typeof(wpartida) == "undefined"){
+					wpartida = new Worker("demoWorker.js");
+					wpartida.onmessage = function(event){
+						document.getElementById('tiempopartida').innerHTML = event.data;
+					}
+
+				}
+			}else{
+				alert("El navegador no soporta workers");
+			}
+		}
+
+		function iniciaJugador(){
+			//Preguntar si soporta workers
+			if(typeof(Worker) != "undefined"){
+				if(typeof(wjugador) == "undefined"){
+					wjugador = new Worker("demoWorker.js");
+					wjugador.onmessage = function(event){
+						document.getElementById('tiempojugador').innerHTML = event.data;
+
+					}
+
+				}
+			}else{
+				alert("El navegador no soporta workers");
+			}
+			//detenerWorker();
+			if(turno1){
+				document.getElementById('boton').
+			}
+
+			wjugador = undefined;
+
+		}
+
+		
+		 function reiniciar(){
+		 	if(typeof(Worker) != "undefined"){
+		 		iniciaJugador();
+		 	}else{
+		 		wjugador.terminate();
+		 	}
+		 }
+
+
+	</script>
+	
+</body>
+</html>
