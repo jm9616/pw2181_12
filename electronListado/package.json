@@ -1,0 +1,22 @@
+{
+  "name": "electronlistado",
+  "version": "1.0.0",
+  "description": "\"Listado Electron\"",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lista",
+    "grupo",
+    "aplicacion"
+  ],
+  "author": "Gustavo y mario",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^2.0.0",
+    "electron-package": "^0.1.0",
+    "electron-require": "^0.3.0",
+    "jquery": "^3.3.1"
+  }
+}
