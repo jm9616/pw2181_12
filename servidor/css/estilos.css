@@ -1,0 +1,19 @@
+body{
+
+	background: gray;
+	font-size: 16px;
+	margin: 0 auto;
+	max-width: 1024px;
+
+}
+#frmUsuarios,#frmListado{
+	display: none;
+}
+#secInicio,#frmUsuarios,#frmListado{
+
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 350px;
+
+}
+
